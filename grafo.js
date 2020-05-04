@@ -44,23 +44,32 @@ const data =
     }
   ]
 }
+console.log(data);
 
-const search = (root) => {
-  if (root.children[0].children) {
-    for (let i = 0; i < root.children.length; i++) {
-      search(root.children[i]);
-    }
-  }
-  if (!root.value) {
-    root.value = root.children.reduce((a, b) => a + b.value, 0);
-  }
-  console.log(root.name, root.value);
-}
-search(data)
+const aba = { ...data, id: 3 };
+console.log(aba);
+// if (!vet[0]) {
+//   console.log('deu buceta')
+// } else {
+//   console.log('deu nao carai')
+// }
 
 // const search = (root) => {
-//   if (root.children[0].children) root.children.map(item  => search(item))
-//   if (!root.value) root.value = root.children.reduce((a, b) => a + b.value, 0);
+//   if (root.children[0].children) {
+//     for (let i = 0; i < root.children.length; i++) {
+//       search(root.children[i]);
+//     }
+//   }
+//   if (!root.value) {
+//     root.value = root.children.reduce((a, b) => a + b.value, 0);
+//   }
 //   console.log(root.name, root.value);
 // }
 // search(data)
+
+// // const search = (root) => {
+// //   if (root.children[0].children) root.children.map(item  => search(item))
+// //   if (!root.value) root.value = root.children.reduce((a, b) => a + b.value, 0);
+// //   console.log(root.name, root.value);
+// // }
+// // search(data)
