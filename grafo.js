@@ -48,11 +48,6 @@ console.log(data);
 
 const aba = { ...data, id: 3 };
 console.log(aba);
-// if (!vet[0]) {
-//   console.log('deu buceta')
-// } else {
-//   console.log('deu nao carai')
-// }
 
 // const search = (root) => {
 //   if (root.children[0].children) {
